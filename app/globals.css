@@ -36,14 +36,28 @@ body {
   }
 }
 
+@keyframes vehicle-rush {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(calc(100vw + 300px));
+  }
+}
+
+.animate-vehicle-rush {
+  animation: vehicle-rush 0.9s linear both;
+  filter: drop-shadow(0 4px 16px rgba(37, 99, 235, 0.35));
+}
+
 .animate-fly-in {
-  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.0s both;
 }
 
 .animate-fly-in-delay {
-  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.15s both;
 }
 
 .animate-fly-in-delay-2 {
-  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  animation: fly-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.3s both;
 }
