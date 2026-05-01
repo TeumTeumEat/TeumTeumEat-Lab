@@ -70,7 +70,7 @@ export default function Home() {
         <div className="hero-keystats">
           <div className="keystat-item">
             <span className="keystat-num">5분</span>
-            <span className="keystat-label">학습 소요시간</span>
+            <span className="keystat-label">하루 평균 학습 소요시간</span>
           </div>
           <div className="keystat-div" />
           <div className="keystat-item">
