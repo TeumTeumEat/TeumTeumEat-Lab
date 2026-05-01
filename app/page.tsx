@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* 뱃지 */}
         <div className="hero-eyebrow">
-          <div className="eyebrow-dot" /> AI 맞춤형 퀴즈 학습앱
+          어떤 앱인가요?
         </div>
 
         {/* 헤드라인 */}
