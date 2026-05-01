@@ -66,6 +66,24 @@ export default function Home() {
           당신의 지식을 <strong>틈틈이</strong> 채워보세요.
         </p>
 
+        {/* 키 스탯 */}
+        <div className="hero-keystats">
+          <div className="keystat-item">
+            <span className="keystat-num">5분</span>
+            <span className="keystat-label">학습 소요시간</span>
+          </div>
+          <div className="keystat-div" />
+          <div className="keystat-item">
+            <span className="keystat-num">100%</span>
+            <span className="keystat-label">AI 기반 맞춤 퀴즈 생성</span>
+          </div>
+          <div className="keystat-div" />
+          <div className="keystat-item">
+            <span className="keystat-num">0원</span>
+            <span className="keystat-label">모든 퀴즈 무료 이용가능</span>
+          </div>
+        </div>
+
         {/* 버튼 */}
         <div className="hero-btns">
           <a href="#download" className="btn-primary">🍎 App Store에서 받기</a>
