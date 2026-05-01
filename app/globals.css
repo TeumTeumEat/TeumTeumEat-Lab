@@ -109,7 +109,7 @@ nav {
   font-family: var(--font-noto-kr), 'Noto Sans KR', sans-serif;
   font-size: clamp(32px, 6vw, 64px);
   font-weight: 900; line-height: 1.2; letter-spacing: -1.5px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   animation: fadeUp 0.6s ease 0.1s both;
 }
 .hero-headline .highlight {
@@ -130,8 +130,11 @@ nav {
 
 .hero-sub {
   font-size: clamp(15px, 2.5vw, 18px); color: var(--text-mid);
-  line-height: 1.7; max-width: 520px; margin: 0 auto 40px;
+  line-height: 1.7; max-width: 520px; margin: 24px auto 40px;
   animation: fadeUp 0.6s ease 0.2s both; font-weight: 400;
+}
+.hero-sub-first {
+  display: block; margin-bottom: 16px;
 }
 
 .hero-btns {

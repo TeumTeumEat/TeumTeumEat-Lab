@@ -56,12 +56,12 @@ export default function Home() {
         {/* 헤드라인 */}
         <h1 className="hero-headline">
           아직도 숏폼으로<br />
-          <span className="highlight">틈새 시간</span>을 떼우나요?
+          <span className="highlight">틈새 시간</span>을 떼우시나요?
         </h1>
 
         {/* 서브 */}
         <p className="hero-sub">
-          지루한 출퇴근길이 지적 성장 시간으로!<br />
+          <span className="hero-sub-first">지루한 출퇴근길을 성장 시간으로 바꾸고 싶지 않으신가요?</span>
           AI가 만들어주는 맞춤형 퀴즈로 매일 5분,<br />
           당신의 지식을 <strong>틈틈이</strong> 채워보세요.
         </p>
