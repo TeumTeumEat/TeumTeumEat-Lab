@@ -86,8 +86,8 @@ export default function Home() {
 
         {/* 버튼 */}
         <div className="hero-btns">
-          <a href="#download" className="btn-primary">🍎 App Store에서 받기</a>
-          <a href="#features" className="btn-secondary">✨ 어떤 앱인가요?</a>
+          <a href="#download" className="btn-primary">🍎 App Store 다운받기</a>
+          <a href="#download" className="btn-secondary">▶ Play Store 다운받기</a>
         </div>
 
         {/* 폰 목업 */}
