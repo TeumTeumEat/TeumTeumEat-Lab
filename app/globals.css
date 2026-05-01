@@ -39,17 +39,16 @@ body {
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 16px 40px;
+  padding: 40px;
   background: rgba(244, 249, 255, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: var(--font-gaegu), 'Gaegu', cursive;
-  font-size: 24px; font-weight: 700;
-  color: var(--primary); letter-spacing: -0.5px;
+  display: block;
+  width: 100px;
+  height: 77.73px;
 }
-.nav-logo span { color: var(--text); }
 .nav-cta {
   background: var(--primary); color: white;
   border: none; border-radius: 100px;
@@ -66,7 +65,7 @@ nav {
 .hero {
   min-height: 100vh;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 140px 24px 80px;
+  padding: 180px 24px 80px;
   position: relative; overflow: hidden; text-align: center;
 }
 
@@ -243,13 +242,16 @@ nav {
 .features { background: white; padding: 100px 24px; }
 .features-grid {
   max-width: 960px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 24px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-auto-rows: 1fr; gap: 24px;
 }
+.features-grid .reveal { height: 100%; display: flex; flex-direction: column; }
 .feature-card {
   border-radius: 28px; padding: 36px 32px;
   position: relative; overflow: hidden;
   border: 1.5px solid transparent;
   transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1;
 }
 .feature-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px var(--shadow); }
 .feature-card.blue   { background: var(--primary-pale); border-color: rgba(43,143,255,0.25); }
@@ -299,12 +301,15 @@ nav {
 .forwhom { background: white; padding: 100px 24px; }
 .personas {
   max-width: 800px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 1fr; gap: 16px;
 }
+.personas .reveal { height: 100%; display: flex; flex-direction: column; }
 .persona-card {
   background: var(--cream); border-radius: 20px; padding: 24px 20px;
   border: 1.5px solid var(--border);
   transition: transform 0.2s, border-color 0.2s;
+  flex: 1;
 }
 .persona-card:hover { transform: translateY(-3px); border-color: var(--primary-light); }
 .persona-emoji { font-size: 32px; display: block; margin-bottom: 12px; }
@@ -375,10 +380,18 @@ footer {
 }
 .animate-peek-in { animation: peek-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 2.1s both; }
 
+/* ── TABLET ── */
+@media (max-width: 1024px) {
+  nav { padding: 24px 32px; }
+  .nav-logo { width: 80px; height: auto; }
+  .hero { padding: 160px 24px 80px; }
+}
+
 /* ── MOBILE ── */
 @media (max-width: 640px) {
-  nav { padding: 14px 20px; }
-  .hero { padding: 100px 20px 60px; }
+  nav { padding: 20px; }
+  .nav-logo { width: 70px; height: auto; }
+  .hero { padding: 130px 20px 60px; }
   .phone-frame { width: 200px; }
   .char-float { display: none; }
   .features-grid { grid-template-columns: 1fr; }

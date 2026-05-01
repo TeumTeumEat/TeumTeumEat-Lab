@@ -5,7 +5,8 @@ export default function Home() {
     <>
       {/* ── NAV ── */}
       <nav>
-        <div className="nav-logo">틈틈<span>잇</span></div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.svg" alt="틈틈잇" className="nav-logo" />
         <a href="#download" className="nav-cta">앱 다운로드</a>
       </nav>
 
@@ -101,7 +102,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="char-float">🐣</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "72px", height: "72px", objectFit: "contain" }} />
         </div>
 
         {/* 스탯 */}
@@ -144,7 +146,8 @@ export default function Home() {
           <ScrollReveal delay={100}>
             <div className="feature-card green">
               <div className="feature-num">02</div>
-              <span className="feature-icon">🐣</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/mascot.png" alt="틈틈잇 마스코트" className="feature-icon" style={{ width: "40px", height: "40px", objectFit: "contain" }} />
               <div className="feature-title">&apos;틈틈잇&apos; 캐릭터에게<br />지식을 먹여주세요!</div>
               <div className="feature-desc">하루 5분, AI가 정리해주는 요약본을 읽고 퀴즈를 풀어 &apos;틈틈잇&apos;에게 지식 간식을 먹이고 한 발자국 성장해요.</div>
             </div>
@@ -235,7 +238,8 @@ export default function Home() {
 
       {/* ── CTA ── */}
       <section className="cta-section" id="download">
-        <span className="cta-char">🐣</span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/mascot.png" alt="틈틈잇 마스코트" className="cta-char" style={{ width: "100px", height: "100px", objectFit: "contain", display: "inline-block" }} />
         <h2 className="cta-title">
           지금 &apos;틈틈잇&apos;을 다운로드하고<br />
           일상의 틈을 가치있게 바꿔봐요!
@@ -252,15 +256,12 @@ export default function Home() {
       {/* ── FOOTER ── */}
       <footer>
         <div className="footer-logo">틈틈잇</div>
-        <div className="footer-copy">© 2025 틈틈잇 팀. All rights reserved.</div>
+        <div className="footer-copy">© 2026 틈틈잇 팀. All rights reserved.</div>
       </footer>
 
       {/* 마스코트 (고정 장식) */}
-      <div className="animate-peek-in" style={{ position: "fixed", bottom: "32px", right: 0, zIndex: 10, pointerEvents: "none" }}>
-        <div style={{ width: "96px", height: "96px", borderRadius: "50%", background: "#FF9F45", border: "4px solid #F08020", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "2.5rem", boxShadow: "0 4px 16px rgba(0,0,0,0.15)" }}>
-          🐣
-        </div>
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/mascot.png" alt="틈틈잇 마스코트" className="animate-peek-in" style={{ position: "fixed", bottom: "24px", right: 0, zIndex: 10, pointerEvents: "none", width: "100px", height: "100px", objectFit: "contain" }} />
     </>
   );
 }
