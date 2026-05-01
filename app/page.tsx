@@ -106,23 +106,6 @@ export default function Home() {
           <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "72px", height: "72px", objectFit: "contain" }} />
         </div>
 
-        {/* 스탯 */}
-        <div className="stats-row">
-          <div className="stat-item">
-            <span className="stat-num">5분</span>
-            <span className="stat-label">하루 평균 학습 시간</span>
-          </div>
-          <div className="stat-div" />
-          <div className="stat-item">
-            <span className="stat-num">AI</span>
-            <span className="stat-label">완전 맞춤 퀴즈</span>
-          </div>
-          <div className="stat-div" />
-          <div className="stat-item">
-            <span className="stat-num">무료</span>
-            <span className="stat-label">기본 이용 무료</span>
-          </div>
-        </div>
       </section>
 
       {/* 웨이브 구분선 */}
