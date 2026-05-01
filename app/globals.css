@@ -46,8 +46,8 @@ nav {
 }
 .nav-logo {
   display: block;
-  width: 100px;
-  height: 77.73px;
+  width: 52px;
+  height: auto;
 }
 .nav-cta {
   background: var(--primary); color: white;
@@ -130,7 +130,7 @@ nav {
 
 .hero-sub {
   font-size: clamp(15px, 2.5vw, 18px); color: var(--text-mid);
-  line-height: 1.7; max-width: 520px; margin: 12px auto 40px;
+  line-height: 1.7; max-width: 520px; margin: 12px auto 120px;
   animation: fadeUp 0.6s ease 0.2s both; font-weight: 400;
 }
 .hero-sub-first {
