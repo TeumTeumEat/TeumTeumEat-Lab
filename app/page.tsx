@@ -103,7 +103,7 @@ export default function Home() {
             />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "72px", height: "72px", objectFit: "contain" }} />
+          <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "300px", height: "300px", objectFit: "contain" }} />
         </div>
 
       </section>

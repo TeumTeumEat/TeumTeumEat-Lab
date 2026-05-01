@@ -247,7 +247,7 @@ nav {
 .streak-label { font-size: 9px; color: var(--text-muted); font-weight: 500; }
 .streak-count { font-size: 16px; font-weight: 900; color: var(--primary); }
 .char-float {
-  position: absolute; right: -30px; bottom: 20px; font-size: 48px;
+  position: absolute; left: -80px; bottom: -180px; font-size: 48px;
   animation: charBounce 3s ease-in-out infinite;
   filter: drop-shadow(0 4px 8px rgba(43, 143, 255, 0.3));
 }
