@@ -51,10 +51,11 @@ nav {
 }
 .nav-cta {
   background: var(--primary); color: white;
-  border: none; border-radius: 100px;
-  padding: 10px 22px;
+  border: none; border-radius: 19.48px;
+  padding: 15.44px 19.48px;
+  display: inline-flex; align-items: center; justify-content: center;
   font-family: var(--font-noto-kr), sans-serif;
-  font-size: 14px; font-weight: 700;
+  font-size: 14px; font-weight: 500;
   cursor: pointer; text-decoration: none;
   transition: transform 0.15s, box-shadow 0.15s;
   box-shadow: 0 4px 16px rgba(43, 143, 255, 0.3);
