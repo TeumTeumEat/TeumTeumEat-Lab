@@ -79,39 +79,38 @@ export default function Home() {
       {/* ── FEATURES ── */}
       <section className="features" id="features">
         <div className="section-label pill">핵심 기능</div>
-        <h2 className="section-title">이런 게 다 있어요 🎉</h2>
+        <h2 className="section-title">이런 기능이 있어요!</h2>
         <div className="features-grid">
           <ScrollReveal>
-            <div className="feature-card blue">
-              <div className="feature-num">01</div>
-              <span className="feature-icon">🎁</span>
-              <div className="feature-title">매일 아침 배달되는<br />&apos;지식 간식&apos;</div>
-              <div className="feature-desc">자고 일어나면 홈 화면에 오늘의 지식 간식이 도착해 있어요. 내가 고른 카테고리나 직접 업로드한 파일을 바탕으로 AI가 엄선한 따끈따끈한 퀴즈를 풀어봐요.</div>
+            <div className="feature-card">
+              <div className="feature-title">매일 아침 배달되는 &apos;지식 간식&apos;</div>
+              <div className="feature-desc">자고 일어나면 홈 화면에 오늘의 지식 간식이 도착해 있어요.<br />내가 고른 카테고리나 직접 업로드한 파일을 바탕으로 한<br />AI가 엄선해준 따끈따끈한 퀴즈를 풀어봐요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme1.png" alt="지식 간식 화면" className="feature-img" style={{ width: "40%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-            <div className="feature-card green">
-              <div className="feature-num">02</div>
+            <div className="feature-card">
+              <div className="feature-title">&apos;틈틈잇&apos; 캐릭터에게 지식을 먹여주세요!</div>
+              <div className="feature-desc">하루 5분, AI가 정리해주는 요약본을 읽고,<br />퀴즈를 풀어 지식 간식을 먹이고 한 발자국 성장해요.</div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/mascot.png" alt="틈틈잇 마스코트" className="feature-icon" style={{ width: "40px", height: "40px", objectFit: "contain" }} />
-              <div className="feature-title">&apos;틈틈잇&apos; 캐릭터에게<br />지식을 먹여주세요!</div>
-              <div className="feature-desc">하루 5분, AI가 정리해주는 요약본을 읽고 퀴즈를 풀어 &apos;틈틈잇&apos;에게 지식 간식을 먹이고 한 발자국 성장해요.</div>
+              <img src="/theme2.png" alt="요약 화면" className="feature-img" style={{ width: "40%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={150}>
-            <div className="feature-card purple">
-              <div className="feature-num">03</div>
-              <span className="feature-icon">🔔</span>
-              <div className="feature-title">나를 깨우는 기분 좋은<br />&apos;성장 트리거&apos;</div>
-              <div className="feature-desc">설정한 출퇴근 시간에 맞춰 도착하는 알림과 연속 학습 시스템으로 학습 동기를 불태워요. AI가 루틴을 똑똑하게 챙겨드려요.</div>
+            <div className="feature-card">
+              <div className="feature-title">한눈에 확인하는 &apos;성취 리워드&apos;</div>
+              <div className="feature-desc">퀴즈를 풀 때마다 찍히는 스탬프와 &apos;연속 학습&apos; 수치로<br />성장을 실감해 보세요.<br />내가 푼 퀴즈는 언제든 다시 꺼내 볼 수 있어요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme3.png" alt="성취 리워드 화면" className="feature-img" style={{ width: "45%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div className="feature-card yellow">
-              <div className="feature-num">04</div>
-              <span className="feature-icon">🏆</span>
-              <div className="feature-title">한눈에 확인하는<br />&apos;성취 리워드&apos;</div>
-              <div className="feature-desc">퀴즈를 풀 때마다 찍히는 스탬프와 &apos;연속 학습&apos; 수치로 성장을 실감해 보세요. 내가 푼 퀴즈는 언제든 다시 꺼내 볼 수 있어요.</div>
+            <div className="feature-card">
+              <div className="feature-title">나를 깨우는 &apos;성장 트리거&apos;</div>
+              <div className="feature-desc">설정한 출퇴근 시간에 맞춰 도착하는 알림과<br />연속 학습 시스템으로 학습 동기를 불태워요.<br />AI가 루틴을 똑똑하게 챙겨드려요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme4.png" alt="성장 트리거 화면" className="feature-img" style={{ width: "55%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
         </div>
