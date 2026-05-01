@@ -287,6 +287,10 @@ nav {
   text-align: center; font-size: 13px; font-weight: 700; color: var(--primary);
   letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;
 }
+.section-label.pill {
+  width: fit-content; margin: 0 auto 16px;
+  background: #EAF4FF; border-radius: 100px; padding: 6px 16px;
+}
 .section-title {
   text-align: center; font-family: var(--font-noto-kr), sans-serif;
   font-size: clamp(26px, 4vw, 40px); font-weight: 900;

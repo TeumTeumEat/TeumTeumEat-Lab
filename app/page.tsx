@@ -78,7 +78,7 @@ export default function Home() {
 
       {/* ── FEATURES ── */}
       <section className="features" id="features">
-        <div className="section-label">핵심 기능</div>
+        <div className="section-label pill">핵심 기능</div>
         <h2 className="section-title">이런 게 다 있어요 🎉</h2>
         <div className="features-grid">
           <ScrollReveal>
