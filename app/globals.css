@@ -188,10 +188,19 @@ nav {
   position: relative; display: inline-block; margin-bottom: 48px;
 }
 .phone-frame {
-  width: 240px; background: var(--text);
-  border-radius: 40px; padding: 12px;
-  box-shadow: 0 30px 80px rgba(10, 22, 40, 0.25), 0 0 0 1px rgba(255,255,255,0.1);
+  width: 260px;
   margin: 0 auto;
+  position: relative;
+  border-radius: 44px;
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08),
+              0 30px 80px rgba(10, 22, 40, 0.15);
+  overflow: hidden;
+  background: #fff;
+}
+.phone-video {
+  width: 100%;
+  display: block;
 }
 .phone-screen {
   background: var(--warm-white); border-radius: 30px;

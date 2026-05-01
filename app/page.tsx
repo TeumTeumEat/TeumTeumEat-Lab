@@ -93,32 +93,14 @@ export default function Home() {
         {/* 폰 목업 */}
         <div className="hero-phone">
           <div className="phone-frame">
-            <div className="phone-screen">
-              <div className="phone-notch" />
-              <div className="phone-content">
-                <div className="phone-greeting">☀️ 좋은 아침이에요, JaeHyeon님!</div>
-                <div className="phone-title">오늘의 지식 간식이<br />도착했어요 🎁</div>
-                <div className="snack-card">
-                  <div className="snack-tag">💻 iOS 개발</div>
-                  <div className="snack-q">Swift에서 @MainActor 어노테이션의 주요 역할은?</div>
-                  <div className="snack-options">
-                    <div className="snack-option">① 백그라운드 처리를 보장</div>
-                    <div className="snack-option correct">② 메인 스레드 실행을 보장 ✓</div>
-                    <div className="snack-option">③ 비동기 함수 생성</div>
-                  </div>
-                </div>
-                <div className="streak-bar">
-                  <div>
-                    <div className="streak-label">연속 학습</div>
-                    <div className="streak-count">🔥 12일</div>
-                  </div>
-                  <div style={{ fontSize: "9px", color: "var(--text-muted)", textAlign: "right" }}>
-                    오늘 퀴즈<br />
-                    <strong style={{ color: "var(--green)", fontSize: "11px" }}>완료!</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <video
+              src="/quiz-demo.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="phone-video"
+            />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "72px", height: "72px", objectFit: "contain" }} />
