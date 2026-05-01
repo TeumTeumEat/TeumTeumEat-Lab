@@ -117,8 +117,14 @@ nav {
 }
 .hero-headline .highlight::after {
   content: '';
-  position: absolute; bottom: -4px; left: 0; right: 0; height: 8px;
-  background: var(--yellow); border-radius: 4px; z-index: -1;
+  position: absolute; bottom: -4px; left: 0; right: 0; height: 3px;
+  background: var(--yellow); border-radius: 2px; z-index: -1;
+  transform: rotate(-1deg);
+}
+.hero-headline .highlight::before {
+  content: '';
+  position: absolute; bottom: -10px; left: 0; right: 0; height: 3px;
+  background: var(--yellow); border-radius: 2px; z-index: -1;
   transform: rotate(-1deg);
 }
 
