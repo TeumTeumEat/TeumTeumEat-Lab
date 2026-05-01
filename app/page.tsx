@@ -12,41 +12,8 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="hero">
-        {/* 버스 애니메이션 */}
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", pointerEvents: "none", overflow: "hidden" }}>
-          <div className="animate-vehicle-rush">
-            <svg width="560" height="214" viewBox="0 0 220 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="4" width="216" height="56" rx="11" fill="#2B8FFF" />
-              <rect x="2" y="4" width="216" height="14" rx="11" fill="#5AABFF" />
-              <rect x="2" y="12" width="216" height="6" fill="#5AABFF" />
-              <rect x="14" y="14" width="28" height="24" rx="5" fill="white" opacity="0.92" />
-              <rect x="54" y="14" width="28" height="24" rx="5" fill="white" opacity="0.92" />
-              <rect x="94" y="14" width="28" height="24" rx="5" fill="white" opacity="0.92" />
-              <rect x="134" y="14" width="28" height="24" rx="5" fill="white" opacity="0.92" />
-              <rect x="174" y="14" width="28" height="24" rx="5" fill="white" opacity="0.92" />
-              <rect x="48" y="8" width="2" height="48" fill="white" opacity="0.25" />
-              <rect x="88" y="8" width="2" height="48" fill="white" opacity="0.25" />
-              <rect x="128" y="8" width="2" height="48" fill="white" opacity="0.25" />
-              <rect x="168" y="8" width="2" height="48" fill="white" opacity="0.25" />
-              <rect x="2" y="50" width="216" height="10" fill="#1672D8" />
-              <rect x="8" y="60" width="204" height="10" rx="3" fill="#0A1628" />
-              <circle cx="38" cy="75" r="9" fill="#0A1628" /><circle cx="38" cy="75" r="5" fill="#2B4A7A" /><circle cx="38" cy="75" r="2" fill="#6B8AAD" />
-              <circle cx="110" cy="75" r="9" fill="#0A1628" /><circle cx="110" cy="75" r="5" fill="#2B4A7A" /><circle cx="110" cy="75" r="2" fill="#6B8AAD" />
-              <circle cx="182" cy="75" r="9" fill="#0A1628" /><circle cx="182" cy="75" r="5" fill="#2B4A7A" /><circle cx="182" cy="75" r="2" fill="#6B8AAD" />
-              <rect x="0" y="83" width="220" height="1" fill="#6B8AAD" opacity="0.4" />
-            </svg>
-          </div>
-        </div>
-
-        {/* 배경 blob */}
-        <div className="blob blob-1" />
-        <div className="blob blob-2" />
-        <div className="blob blob-3" />
-
-        {/* 도트 장식 */}
-        <div className="dots-grid">
-          {Array.from({ length: 15 }).map((_, i) => <div key={i} className="dot" />)}
-        </div>
+        {/* 파란 언덕 */}
+        <div className="hero-hill" />
 
         {/* 뱃지 */}
         <div className="hero-eyebrow">
@@ -108,10 +75,6 @@ export default function Home() {
 
       </section>
 
-      {/* 웨이브 구분선 */}
-      <svg style={{ display: "block", width: "100%", marginBottom: "-2px" }} viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="white" />
-      </svg>
 
       {/* ── FEATURES ── */}
       <section className="features" id="features">
