@@ -5,16 +5,19 @@ export default function Home() {
     <>
       {/* ── NAV ── */}
       <nav>
-        <div className="nav-logo">
-          틈틈<span>잇</span>
-        </div>
-        <a href="#download" className="nav-cta">
-          앱 다운로드
-        </a>
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.svg" alt="틈틈잇" className="nav-logo" />
+        <a href="#download" className="nav-cta">앱 다운로드</a>
+
       </nav>
 
       {/* ── HERO ── */}
       <section className="hero">
+
+        {/* 파란 언덕 */}
+        <div className="hero-hill" />
+
         {/* 버스 애니메이션 */}
         <div
           style={{
@@ -170,186 +173,115 @@ export default function Home() {
           ))}
         </div>
 
+
         {/* 뱃지 */}
         <div className="hero-eyebrow">
-          <div className="eyebrow-dot" /> AI 맞춤형 퀴즈 학습앱
+          어떤 앱인가요?
         </div>
 
         {/* 헤드라인 */}
         <h1 className="hero-headline">
-          아직도 숏폼으로
-          <br />
-          <span className="highlight">틈새 시간</span>을 떼우나요?
+
+          아직도 숏폼으로<br />
+          <span className="highlight">틈새 시간</span>을 떼우시나요?
+
         </h1>
 
         {/* 서브 */}
         <p className="hero-sub">
-          지루한 출퇴근길이 지적 성장 시간으로!
-          <br />
-          AI가 만들어주는 맞춤형 퀴즈로 매일 5분,
-          <br />
+
+          <span className="hero-sub-first">지루한 출퇴근길을 성장 시간으로 바꾸고 싶지 않으신가요?</span>
+          AI가 만들어주는 맞춤형 퀴즈로 매일 5분,<br />
+
           당신의 지식을 <strong>틈틈이</strong> 채워보세요.
         </p>
 
+        {/* 키 스탯 */}
+        <div className="hero-keystats">
+          <div className="keystat-item">
+            <span className="keystat-num">5분</span>
+            <span className="keystat-label">하루 평균 학습 소요시간</span>
+          </div>
+          <div className="keystat-div" />
+          <div className="keystat-item">
+            <span className="keystat-num">100%</span>
+            <span className="keystat-label">AI 기반 맞춤 퀴즈 생성</span>
+          </div>
+          <div className="keystat-div" />
+          <div className="keystat-item">
+            <span className="keystat-num">0원</span>
+            <span className="keystat-label">모든 퀴즈 무료 이용가능</span>
+          </div>
+        </div>
+
         {/* 버튼 */}
         <div className="hero-btns">
-          <a href="#download" className="btn-primary">
-            🍎 App Store에서 받기
-          </a>
-          <a href="#features" className="btn-secondary">
-            ✨ 어떤 앱인가요?
-          </a>
+
+          <a href="#download" className="btn-primary">🍎 App Store 다운받기</a>
+          <a href="#download" className="btn-secondary">▶ Play Store 다운받기</a>
+
         </div>
 
         {/* 폰 목업 */}
         <div className="hero-phone">
           <div className="phone-frame">
-            <div className="phone-screen">
-              <div className="phone-notch" />
-              <div className="phone-content">
-                <div className="phone-greeting">
-                  ☀️ 좋은 아침이에요, JaeHyeon님!
-                </div>
-                <div className="phone-title">
-                  오늘의 지식 간식이
-                  <br />
-                  도착했어요 🎁
-                </div>
-                <div className="snack-card">
-                  <div className="snack-tag">💻 iOS 개발</div>
-                  <div className="snack-q">
-                    Swift에서 @MainActor 어노테이션의 주요 역할은?
-                  </div>
-                  <div className="snack-options">
-                    <div className="snack-option">① 백그라운드 처리를 보장</div>
-                    <div className="snack-option correct">
-                      ② 메인 스레드 실행을 보장 ✓
-                    </div>
-                    <div className="snack-option">③ 비동기 함수 생성</div>
-                  </div>
-                </div>
-                <div className="streak-bar">
-                  <div>
-                    <div className="streak-label">연속 학습</div>
-                    <div className="streak-count">🔥 12일</div>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "9px",
-                      color: "var(--text-muted)",
-                      textAlign: "right",
-                    }}
-                  >
-                    오늘 퀴즈
-                    <br />
-                    <strong style={{ color: "var(--green)", fontSize: "11px" }}>
-                      완료!
-                    </strong>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            <video
+              src="/quiz-demo.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="phone-video"
+            />
+
           </div>
-          <div className="char-float">🐣</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/mascot.png" alt="틈틈잇 마스코트" className="char-float" style={{ width: "300px", height: "300px", objectFit: "contain" }} />
         </div>
 
-        {/* 스탯 */}
-        <div className="stats-row">
-          <div className="stat-item">
-            <span className="stat-num">5분</span>
-            <span className="stat-label">하루 평균 학습 시간</span>
-          </div>
-          <div className="stat-div" />
-          <div className="stat-item">
-            <span className="stat-num">AI</span>
-            <span className="stat-label">완전 맞춤 퀴즈</span>
-          </div>
-          <div className="stat-div" />
-          <div className="stat-item">
-            <span className="stat-num">무료</span>
-            <span className="stat-label">기본 이용 무료</span>
-          </div>
-        </div>
       </section>
 
-      {/* 웨이브 구분선 */}
-      <svg
-        style={{ display: "block", width: "100%", marginBottom: "-2px" }}
-        viewBox="0 0 1440 60"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z"
-          fill="white"
-        />
-      </svg>
+
+
 
       {/* ── FEATURES ── */}
       <section className="features" id="features">
-        <div className="section-label">핵심 기능</div>
-        <h2 className="section-title">이런 게 다 있어요 🎉</h2>
+        <div className="section-label pill">핵심 기능</div>
+        <h2 className="section-title">이런 기능이 있어요!</h2>
         <div className="features-grid">
           <ScrollReveal>
-            <div className="feature-card blue">
-              <div className="feature-num">01</div>
-              <span className="feature-icon">🎁</span>
-              <div className="feature-title">
-                매일 아침 배달되는
-                <br />
-                &apos;지식 간식&apos;
-              </div>
-              <div className="feature-desc">
-                자고 일어나면 홈 화면에 오늘의 지식 간식이 도착해 있어요. 내가
-                고른 카테고리나 직접 업로드한 파일을 바탕으로 AI가 엄선한
-                따끈따끈한 퀴즈를 풀어봐요.
-              </div>
+
+            <div className="feature-card">
+              <div className="feature-title">매일 아침 배달되는 &apos;지식 간식&apos;</div>
+              <div className="feature-desc">자고 일어나면 홈 화면에 오늘의 지식 간식이 도착해 있어요.<br />내가 고른 카테고리나 직접 업로드한 파일을 바탕으로 한<br />AI가 엄선해준 따끈따끈한 퀴즈를 풀어봐요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme1.png" alt="지식 간식 화면" className="feature-img" style={{ width: "40%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-            <div className="feature-card green">
-              <div className="feature-num">02</div>
-              <span className="feature-icon">🐣</span>
-              <div className="feature-title">
-                &apos;틈틈잇&apos; 캐릭터에게
-                <br />
-                지식을 먹여주세요!
-              </div>
-              <div className="feature-desc">
-                하루 5분, AI가 정리해주는 요약본을 읽고 퀴즈를 풀어
-                &apos;틈틈잇&apos;에게 지식 간식을 먹이고 한 발자국 성장해요.
-              </div>
+            <div className="feature-card">
+              <div className="feature-title">&apos;틈틈잇&apos; 캐릭터에게 지식을 먹여주세요!</div>
+              <div className="feature-desc">하루 5분, AI가 정리해주는 요약본을 읽고,<br />퀴즈를 풀어 지식 간식을 먹이고 한 발자국 성장해요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme2.png" alt="요약 화면" className="feature-img" style={{ width: "40%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={150}>
-            <div className="feature-card purple">
-              <div className="feature-num">03</div>
-              <span className="feature-icon">🔔</span>
-              <div className="feature-title">
-                나를 깨우는 기분 좋은
-                <br />
-                &apos;성장 트리거&apos;
-              </div>
-              <div className="feature-desc">
-                설정한 출퇴근 시간에 맞춰 도착하는 알림과 연속 학습 시스템으로
-                학습 동기를 불태워요. AI가 루틴을 똑똑하게 챙겨드려요.
-              </div>
+            <div className="feature-card">
+              <div className="feature-title">한눈에 확인하는 &apos;성취 리워드&apos;</div>
+              <div className="feature-desc">퀴즈를 풀 때마다 찍히는 스탬프와 &apos;연속 학습&apos; 수치로<br />성장을 실감해 보세요.<br />내가 푼 퀴즈는 언제든 다시 꺼내 볼 수 있어요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme3.png" alt="성취 리워드 화면" className="feature-img" style={{ width: "45%", marginTop: "auto", marginBottom: "-36px" }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div className="feature-card yellow">
-              <div className="feature-num">04</div>
-              <span className="feature-icon">🏆</span>
-              <div className="feature-title">
-                한눈에 확인하는
-                <br />
-                &apos;성취 리워드&apos;
-              </div>
-              <div className="feature-desc">
-                퀴즈를 풀 때마다 찍히는 스탬프와 &apos;연속 학습&apos; 수치로
-                성장을 실감해 보세요. 내가 푼 퀴즈는 언제든 다시 꺼내 볼 수
-                있어요.
-              </div>
+            <div className="feature-card">
+              <div className="feature-title">나를 깨우는 &apos;성장 트리거&apos;</div>
+              <div className="feature-desc">설정한 출퇴근 시간에 맞춰 도착하는 알림과<br />연속 학습 시스템으로 학습 동기를 불태워요.<br />AI가 루틴을 똑똑하게 챙겨드려요.</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/theme4.png" alt="성장 트리거 화면" className="feature-img" style={{ width: "55%", marginTop: "auto", marginBottom: "-36px" }} />
+
             </div>
           </ScrollReveal>
         </div>
@@ -515,6 +447,10 @@ export default function Home() {
 
       {/* ── CTA ── */}
       <section className="cta-section" id="download">
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/mascot.png" alt="틈틈잇 마스코트" className="cta-char" style={{ width: "100px", height: "100px", objectFit: "contain", display: "inline-block" }} />
+
         <h2 className="cta-title">
           지금 &apos;틈틈잇&apos;을 다운로드하고
           <br />
@@ -538,6 +474,7 @@ export default function Home() {
 
       {/* ── FOOTER ── */}
       <footer>
+
         <div className="footer-left">
           <div className="footer-contact">
             <div className="footer-contact-item">
@@ -591,34 +528,12 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* 마스코트 (고정 장식) */}
-      <div
-        className="animate-peek-in"
-        style={{
-          position: "fixed",
-          bottom: "32px",
-          right: 0,
-          zIndex: 10,
-          pointerEvents: "none",
-        }}
-      >
-        <div
-          style={{
-            width: "96px",
-            height: "96px",
-            borderRadius: "50%",
-            background: "#FF9F45",
-            border: "4px solid #F08020",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "2.5rem",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
-          }}
-        >
-          🐣
-        </div>
-      </div>
-    </>
-  );
+       {/* 마스코트 (고정 장식) */}                                            
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/mascot.png" alt="틈틈잇 마스코트" className="animate-peek-in"
+   style={{ position: "fixed", bottom: "24px", right: 0, zIndex: 10,          
+  pointerEvents: "none", width: "100px", height: "100px", objectFit: "contain"
+  }} />
+      </>
+    );
 }
