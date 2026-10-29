@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Home from "../page";
 
-const title = "틈틈잇 리그 — 매일 5분 퀴즈로 함께 겨뤄요";
+const title = "틈틈잇 리그 - 매일 5분 퀴즈로 함께 겨뤄요";
 const description =
   "틈틈잇 리그에서 매일 5분 퀴즈를 풀고 다른 학습자들과 순위를 겨뤄보세요.";
 

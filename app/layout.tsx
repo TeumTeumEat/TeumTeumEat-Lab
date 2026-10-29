@@ -12,7 +12,7 @@ const SITE_NAME = "틈틈잇";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "틈틈잇 — 일상의 틈을 지식으로 채우세요",
+  title: "틈틈잇 - 일상의 틈을 지식으로 채우세요",
   description: "아직도 숏폼으로 틈새 시간을 떼우나요? AI 맞춤형 퀴즈로 매일 5분, 당신의 지식을 틈틈이 채워보세요.",
   openGraph: { siteName: SITE_NAME },
 };
