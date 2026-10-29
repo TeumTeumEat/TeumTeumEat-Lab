@@ -7,15 +7,16 @@ import { APP_STORE_URL, PLAY_STORE_URL } from "./app/lib/storeLinks";
 export function proxy(request: NextRequest) {
   const ua = request.headers.get("user-agent") || "";
 
+  let response = NextResponse.next();
   if (/iPhone|iPad|iPod/i.test(ua)) {
-    return NextResponse.redirect(APP_STORE_URL);
+    response = NextResponse.redirect(APP_STORE_URL);
+  } else if (/Android/i.test(ua)) {
+    response = NextResponse.redirect(PLAY_STORE_URL);
   }
 
-  if (/Android/i.test(ua)) {
-    return NextResponse.redirect(PLAY_STORE_URL);
-  }
-
-  return NextResponse.next();
+  // Googlebot(스마트폰 UA는 Android)도 리다이렉트되어 메타 태그를 못 보므로 헤더로 검색 노출을 막는다.
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return response;
 }
 
 export const config = {
