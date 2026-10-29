@@ -22,7 +22,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: SITE_NAME,
-  alternateName: ["TeumTeumEat", "틈틈eat"],
+  alternateName: "TeumTeumEat",
   url: `${SITE_URL}/`,
 };
 
