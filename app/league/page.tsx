@@ -9,7 +9,19 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
+  openGraph: {
+    title,
+    description,
+    url: "https://teumteumeat.co.kr/league",
+    // 리그 참여 유도 썸네일. 이미지를 바꿀 때는 카카오 캐시 때문에 새 파일명으로 올린다.
+    images: [
+      {
+        url: "https://teumteumeat.co.kr/og/league-invite.png",
+        width: 640,
+        height: 320,
+      },
+    ],
+  },
 };
 
 // 앱 공유 링크(/league)를 PC에서 연 경우 메인 랜딩을 그대로 보여준다.
